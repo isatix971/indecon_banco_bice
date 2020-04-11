@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HeadComponent } from './head/head.component';
 import { HomeComponent } from './home/home.component';
 import { LeftbarComponent } from './leftbar/leftbar.component';
+import { GraphQLModule } from "./graphql.module";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { LeftbarComponent } from './leftbar/leftbar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    GraphQLModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
