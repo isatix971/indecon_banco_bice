@@ -20,9 +20,9 @@
                               </tr>
                             </thead>
                             <tbody>
-                              <tr *ngFor="let book of books">
-                                <th scope="row">{{ book.title }}</th>
-                                <td>{{ getAuthorNames(book.authors) }}</td>
+                              <tr *ngFor="let ind of indicatorValues">
+                                <td scope="row">{{ ind.name }}</td>
+                                <td>{{ ind.value }}</td>
                               </tr>
                             </tbody>
                           </table>

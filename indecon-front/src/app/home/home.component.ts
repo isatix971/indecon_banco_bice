@@ -9,7 +9,7 @@ import gql from "graphql-tag";
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  books: any[];
+  indicatorValues: any[];
   loading = true;
   error: any;
 
@@ -18,20 +18,23 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.apollo
       .query<any>({
-        query: gql`
-          getIndicatorValues{
-            id,
-            name,
-            unit,
-            key,
-            date,
-            value
-        }
+        query: gql`{
+            getIndicatorValues{
+              id,
+              name,
+              unit,
+              key,
+              date,
+              value
+            }
+          }
         `
       })
       .subscribe(
         ({ data, loading }) => {
-          this.books = data && data.books;
+          console.log(data);
+
+          this.indicatorValues = data && data.getIndicatorValues;
           this.loading = loading;
         },
         error => {
@@ -41,9 +44,9 @@ export class HomeComponent implements OnInit {
       );
   }
 
-  getAuthorNames(authors) {
-    if (authors.length > 1)
-      return authors.reduce((acc, cur) => acc.name + ", " + cur.name);
-    else return authors[0].name;
+  getAuthorNames(indicatorValues) {
+    if (indicatorValues.length > 1)
+      return indicatorValues.reduce((acc, cur) => acc.name + ", " + cur.name);
+    else return indicatorValues[0].name;
   }
 }

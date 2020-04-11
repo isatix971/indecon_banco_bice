@@ -75,6 +75,7 @@ export class IndicatorResolver {
     values = IndicatorValues.create(data);
     await values.save();
     
+    console.log("llegue al resolver");
     return IndicatorValues.find();
   }
 
