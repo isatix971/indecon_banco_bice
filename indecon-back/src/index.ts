@@ -14,12 +14,11 @@ async function main() {
   
   let data = await getIndicadores();
 
-  console.log(data);
 }
 
 async function getIndeconApi(){
   try {
-    return await axios.get('http://www.indecon.online/last')
+    return await axios.get('http://www.indecon.online')
   } catch (error) {
     console.error(error)
   }
@@ -27,6 +26,7 @@ async function getIndeconApi(){
 
 async function getIndicadores( ){
   const last = await getIndeconApi();
+  console.log(last?.data);
 
   return last?.data;
 }

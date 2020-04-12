@@ -23,7 +23,7 @@
                             </thead>
                             <tbody>
                               <tr *ngFor="let ind of indicatorValues">
-                                <td scope="row">{{ ind.key|titlecase }}</td>
+                                <td scope="row">{{ ind.key|uppercase }}</td>
                                 <td>{{ ind.value | number }} {{ ind.unit }}</td>
                                 <td>{{ ind.date | date : 'mediumDate'}}</td>
                                 <td>{{ ind.name }}</td>
