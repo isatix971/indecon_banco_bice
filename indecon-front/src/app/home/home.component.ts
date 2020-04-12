@@ -12,6 +12,8 @@ export class HomeComponent implements OnInit {
   indicatorValues: any[];
   loading = true;
   error: any;
+  fechaActual = new Date;
+  tituloIndicadores= "Indicadores Economicos actualizados:"
 
   constructor(private apollo: Apollo) {}
 
