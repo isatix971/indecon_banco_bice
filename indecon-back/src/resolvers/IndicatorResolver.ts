@@ -35,4 +35,6 @@ export class IndicatorResolver {
     return IndicatorValues.find();
   }
 
+  
+
 }

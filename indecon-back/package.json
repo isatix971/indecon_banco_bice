@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon -w src --ext ts --exec ts-node src/index.ts"
+    "start": "nodemon -w src --ext ts --exec ts-node src/index.ts",
+    "test": "jest --coverage"
   },
   "author": "Francisco Vergara (francisco@isatix.org)",
   "license": "MIT",
@@ -19,6 +20,11 @@
   "devDependencies": {
     "nodemon": "^2.0.2",
     "ts-node": "^8.6.0",
-    "typescript": "^3.7.4"
+    "typescript": "^3.7.4",
+    "@types/jest": "^24.0.23",
+    "@typescript-eslint/eslint-plugin": "^2.8.0",
+    "@typescript-eslint/parser": "^2.8.0",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.2.0"
   }
 }

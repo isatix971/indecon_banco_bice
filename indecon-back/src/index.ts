@@ -18,11 +18,12 @@ async function main() {
 
 async function getIndeconApi(){
   try {
-    return await axios.get('http://www.indecon.online')
+    return await axios.get('http://www.indecon.online/last')
   } catch (error) {
     console.error(error)
   }
 }
+
 
 async function getIndicadores( ){
   const last = await getIndeconApi();
