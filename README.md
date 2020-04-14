@@ -12,9 +12,9 @@ Clonar el proyecto desde el repositorio de GitHub:
 ### Pre-requisitos 📋
 
 ```Git```
-```Node```
-```npm```
-```angular CLI```
+```Node v13.1.0```
+```npm v6.12.1```
+```Angular CLI 9.1.1```
 
 
 ### Instalación 🔧
