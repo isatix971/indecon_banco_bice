@@ -1,12 +1,12 @@
 # Visualizador indicadores economicos api INDECON
 
-_En este proyecto consumiremos la api de indecon de indicadores economicos y se almacenara en una base de datos SQLite, solo para fines de prueba, luego se podran visualizar los datos a traves de un cliente a traves de un api GraphQl_
+En este proyecto consumiremos la api de indecon de indicadores economicos y se almacenara en una base de datos SQLite, solo para fines de prueba, luego se podran visualizar los datos a traves de un cliente a traves de un api GraphQl
 
 ## Comenzando 🚀
 
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local.
 
-clonar el proyecto desde el repositorio de GitHub: 
+Clonar el proyecto desde el repositorio de GitHub: 
 ```https://github.com/isatix971/indecon_banco_bice```
 
 ### Pre-requisitos 📋
@@ -26,12 +26,12 @@ El proyecto consta de 2 partes, servicios BACKEND y servicio cliente FRONTEND
 ```
 indecon_banco_bice/indecon-back
 ```
-ingresar al directorio y ejecutar:
+Ingresar al directorio y ejecutar:
 ```npm install```
-iniciar servidor:
+Iniciar servidor:
 ```npm start```
 
-para validar que el servidor se encuentra arriba entrar a la url: http://localhost:4000/
+Para validar que el servidor se encuentra arriba entrar a la url: http://localhost:4000/
 una vez iniciado el servidor, pasar al siguiente punto y levantar el Cliente.
 
 ## Por parte de front se utilizaremos Angular CLI y debemos ingresar a: 
@@ -41,15 +41,21 @@ indecon_banco_bice/indecon-front
 ```
 ingresar al directorio y ejecutar:
 ```npm install```
-iniciar servidor:
+Iniciar servidor:
 ```ng serve```
 
 Para visualizar el contenido del API ingresar a la url: http://localhost:4200/
 
 ## Ejecutando test ⚙️
 
-ya que este es un proyecto de test, solo se escribieron pruebas para el proyecto de back en la carpeta del proyecto con:
+Ya que este es un proyecto de test, solo se escribieron pruebas para el proyecto de back.
 
+Ingresar a:
+
+```
+indecon_banco_bice/indecon-back
+```
+Ejecutar:
 ```
 npm test
 ```
